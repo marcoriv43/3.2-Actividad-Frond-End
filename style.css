@@ -186,7 +186,7 @@ nav  a{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("Imagenes/perro.jpg");
+    ,url("Imagenes/Descubre.png");
 }
 
 .carta:nth-child(3){
@@ -195,7 +195,7 @@ nav  a{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("Imagenes/gato2.jpg");
+    ,url("Imagenes/Descubre.png");
 }
 
 #caracteristicas .container{
@@ -369,7 +369,7 @@ footer a {
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         ) 
-        ,url("Imagenes/perro.jpg");
+        ,url("Imagenes/Descubre.png");
     }
     
     .carta:nth-child(3){
@@ -378,11 +378,11 @@ footer a {
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         ) 
-        ,url("Imagenes/gato2.jpg");
+        ,url("Imagenes/Descubre.png");
     }
 
     #caracteristicas{
-        background-image: url(Imagenes/perro1.jpg);
+        background-image: url(Imagenes/Descubre.png);
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 700px) 120px ;
