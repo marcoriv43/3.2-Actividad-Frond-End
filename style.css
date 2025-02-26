@@ -194,7 +194,7 @@ nav  a{
 }
 
 .footer{
-    background-color: #333;
+    background-color: rgb(184, 18, 18);
     color: #fff;
     padding: 20px;  
 
@@ -228,20 +228,44 @@ footer a {
   text-decoration: none;
 }
 
-@media (min-width: 720px) {
-    header{
+@media (min-width: 780px){
+    #header{
         position: fixed;
         width: 100%;
+        display: flex;
+        min-height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;  
+    }   
+
+    #header a{
+        color: #fff;
+        text-decoration: none;
     }
+
     header .container{
         justify-content: space-between;
     }
 
-    header nav{
+    #header nav{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
     }
+
+    #header .logo{
+        display: flex;
+        align-items: center;
+    }
+    #header .logo img{
+        height: 70px;
+    }
+    #header .nav  a{
+        font-weight: 600;
+        padding-right: 30px;
+    }
+
     #somos .container{
         display: flex;
         justify-content: space-evenly;
