@@ -56,6 +56,40 @@ header a{
     text-decoration: none;
 }
 
+.menuP{
+    margin: 0;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    background-color: rgb(126, 32, 32);
+}
+
+.menuP a:hover{
+    color: rgb(110, 96, 57);
+}
+
+.menuP li{
+    position: relative;
+    display: flex;
+}
+
+.menuP li:hover ul{
+    display: block;
+}
+
+.menuP ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(179, 112, 39);
+}
+
+.menuP ul li a {
+    display: block;
+    padding: 8px;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -375,4 +409,98 @@ footer a {
     #caracteristicas{
         background-position-x: calc(100vw - 800px);
     }
+}
+
+.carrusel{
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgb(0, 0, 0);
+    width: 590px;
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.texto{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 40px;
+    backdrop-filter: blur(20px);
+    background-color: rgb(132, 123, 66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.texto h3{
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+    padding-top: 10px;
+    color: blanchedalmond;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.texto p{
+    align-items: center;
+    padding: 5px;
+    color: blanchedalmond;
+    font-size: 0px;
+    font-weight: 250
+}
+
+.imagenes .texto{
+    width: 600px;
+    height: 100px;
+    transition: 1s;
+}
+
+.imagenes:hover .texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 610px;
+    background-color: rgb(159, 45, 33);
+}
+
+.imagenes:hover .texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 0px 0px 10px black;
+}
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: rgb(191, 21, 21);
+}
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #8a1f1f ;
 }
