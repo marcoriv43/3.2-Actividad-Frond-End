@@ -35,42 +35,43 @@ button:hover{
     margin: auto;
 }
 
-header{
-    background-color: rgb(184, 18, 18);
-}
-
 .color-acento{ color: rgb(184, 18, 18);}
 
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color:rgb(255, 255, 255);
-    font-size: 1.5em;
+header{
+    background-color: rgb(184, 18, 18);
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-header .container{
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo{
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+.logo img{
+    height: 70px;
+}
+nav  a{
+    font-weight: 600;
+    padding-right: 30px;
 }
 
-header a{
-    padding: 5px 12px;
-    text-decoration: bold;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: rgb(255, 255, 255);
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
 }
 
 #descubre{
@@ -96,6 +97,10 @@ header a:hover{
     color: white;
 }
 
+#descubre button{
+    font-size: 1.75em;
+}
+
 #somos{
     color: none;
 }
@@ -113,13 +118,113 @@ header a:hover{
 }
 
 #nuestro .container {
-    padding: 200px;
+    padding: 100px 0px;
 }
 
 #nuestro h2{
     margin-top: 0;
+    font-size: 3em;
 }
 
 #nuestro p{
     display: none;
+}
+
+#nuestro .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Descubre.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/perro.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/gato2.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#inscribete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#inscribete h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;  
+
+}
+
+footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin-left: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
